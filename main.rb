@@ -5,12 +5,7 @@ require "byebug"
 player1 = Player.new('player1', 1)
 player2 = Player.new('player2', 2)
 
-puts player1.inspect
-puts player1
-
 @count = 0
-
-
 while (player1.alive? && player2.alive?) do 
 
   current_player = (@count % 2 == 0) ? player1 : player2
